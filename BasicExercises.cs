@@ -8,55 +8,64 @@ namespace LearningCSharp
         public static void Main()
         {
             // Add two numbers
-            int addOne = 8;
-            int addTwo = 2;
-            Console.WriteLine(Add(addOne, addTwo));
+            Console.WriteLine("On Method Add, enter two numbers");
+            int numOne = Convert.ToInt32(Console.ReadLine());
+            int numTwo = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(Add(numOne, numTwo));
 
             // Devide two numbers
-            Console.WriteLine(Devide(addOne, addTwo));
+            Console.WriteLine("One Method Devide");
+            Console.WriteLine(Devide(numOne, numTwo));
 
             // Reversed numbers
-            int[] initialTwoNumbers = new int[] { 5, 6 };
+            Console.WriteLine("On Method SwapNumbers");
+            int[] initialTwoNumbers = new int[] { numOne, numTwo };
             int[] reversedNumbers = SwapNumbers(initialTwoNumbers);
 
             Console.WriteLine("First Number : " + reversedNumbers[0]);
             Console.WriteLine("Second Number : " + reversedNumbers[1]);
 
             // Multiply three numbers
+            Console.WriteLine("On Method MultiplyThreeNums");
             int[] intsToMultiply = new int[] { 2, 3, 6 };
             Console.WriteLine(MultiplyThreeNums(intsToMultiply));
 
-            // Another implementation of the same MultiplyThreeNums method
-            MultiplyThreeNums();
+            // Another implementation of the same MultiplyThreeNumsAnother method
+            Console.WriteLine("On the next Method MultiplyThreeNumsAnother");
+            MultiplyThreeNumsAnother();
 
             // PrintExprOfTwoNumbers())
+            Console.WriteLine("On Method PrintExprOfTwoNumbers");
             Console.Write("Enter a number: ");
             int firstNumber = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Enter another number");
+            Console.Write("Enter another number: ");
             int secondNumber = Convert.ToInt32(Console.ReadLine());
 
             PrintExprOfTwoNumbers(firstNumber, secondNumber);
 
             // Print Multiplication table of a number - MultiplicationTable()
+            Console.WriteLine("On Method MultiplicationTable");
             Console.WriteLine("Enter number bellow to see it's multiplication table");
             Console.WriteLine("Number: ");
-            int multiplicationTableofNum = Convert.ToInt32(Console.ReadLine());
+            int multiplicationTableOfNum = Convert.ToInt32(Console.ReadLine());
 
-            MultiplicationTable(multiplicationTableofNum);
+            MultiplicationTable(multiplicationTableOfNum);
 
             // CalculateAverage(int[])
+            Console.WriteLine("CalculateAverage");
             int[] arrayOfNumsForAverage = new int[] { 10, 15, 20, 30 };
             CalculateAverage(arrayOfNumsForAverage);
 
             // Convert Celsius to Fahrenheit and Kelvin
+            Console.WriteLine("ConvertCeliusToKelvOrFahr");
             ConvertCeliusToKelvOrFahr(-30);
         }
         
-        public static int Add(int addOne, int addTwo)
+        public static int Add(int numOne, int numTwo)
         // Add two numbers
         {
-            return addOne + addTwo;
+            return numOne + numTwo;
         }
 
         public static int Devide(int devideNumOne, int devideNumTwo)
@@ -80,17 +89,17 @@ namespace LearningCSharp
             return result;
         }
 
-        public static void MultiplyThreeNums()
-        // Another implementation of the same MultiplyThreeNums method
+        public static void MultiplyThreeNumsAnother()
+        // Another implementation of the same MultiplyThreeNumsAnother method
         {
             Console.WriteLine("Input the first number to multiply: ");
-            int numOne = Convert.ToInt32(Console.ReadKey());
+            int numOne = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Input the second number to multiply: ");
-            int numTwo = Convert.ToInt32(Console.ReadKey());
+            int numTwo = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Input the third number to multiply: ");
-            int numThree = Convert.ToInt32(Console.ReadKey());
+            int numThree = Convert.ToInt32(Console.ReadLine());
 
             int result = numOne * numTwo * numThree;
 

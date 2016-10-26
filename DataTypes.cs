@@ -8,24 +8,31 @@ namespace LearningCSharp
         public static void Main()
         {
             // Take number and width, print triangle of that width using that number
+            Console.WriteLine("On Method TriangleOfWidth");
             TriangleOfWidth(3, 20);
-
+            
             // Take two numbers and expression and print result
-            evalExpression(20, "-", 12);
+            Console.WriteLine("On Method EvalExpression");
+            EvalExpression(20, "-", 12);
 
             // Take radius and return perimeter and area (circumference)
+            Console.WriteLine("On Method CalcPerimeterAndAreaOfCircle");
             CalcPerimeterAndAreaOfCircle();
 
             // Prompt for user and pass, return 3 different cases if they match and if they do not
+            Console.WriteLine("On Method LoginUserAndPass");
             LoginUserAndPass();
 
             // Enter two of distance, speed, or time and find the other
+            Console.WriteLine("On Method CalculateDistanceTimeSpeed");
             CalculateDistanceTimeSpeed();
             
             // Enter a char print the type of the char - vowel, digit, etc
+            Console.WriteLine("On Method CheckCharType");
             CheckCharType();
             
             // Enter two numbers print if Both numbers are even or odd
+            Console.WriteLine("On Method EvenOrOdd");
             EvenOrOdd();
         }
         
@@ -39,7 +46,7 @@ namespace LearningCSharp
             }
         }
 
-        public static void evalExpression(int numOne, string exprsnOperator, int numTwo)
+        public static void EvalExpression(int numOne, string exprsnOperator, int numTwo)
         // Take two numbers and expression and print result
         {
             if (exprsnOperator == "+")
@@ -72,6 +79,7 @@ namespace LearningCSharp
         public static void CalcPerimeterAndAreaOfCircle()
         // Take radius and return perimeter and area (circumference)
         {
+            Console.WriteLine("Enter Radius value as a floating number: ");
             double radius = double.Parse(Console.ReadLine());
             double pi = Math.PI;
             double area = 2 * pi * radius;
@@ -165,7 +173,7 @@ namespace LearningCSharp
         {
             char symbol;
            
-            Console.WriteLine("Input a symbol");
+            Console.WriteLine("Input a symbol to be checked");
             symbol = Convert.ToChar(Console.ReadLine());
 
             if ((symbol == 'a') || (symbol == 'e') || (symbol == 'i') ||
@@ -181,8 +189,6 @@ namespace LearningCSharp
 
             else
                 Console.WriteLine("It's another symbol.");
-            // Hold console until a key is pressed
-            Console.ReadKey();
         }
 
         public static void EvenOrOdd()
