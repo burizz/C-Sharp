@@ -3,10 +3,10 @@ using System.Linq;
 
 namespace LearningCSharp
 {
-	public class Conditionals
-	{
-		public static void Main()
-		{
+    public class Conditionals
+    {
+        public static void Main()
+        {
             // Enter number print if it is positive or negative
             Console.WriteLine("Entering Method PositiveOrNegative()");
             PositiveOrNegative();
@@ -16,8 +16,8 @@ namespace LearningCSharp
             CheckIfLeapYear();
         }
 
-		public static void PositiveOrNegative()
-		{
+        public static void PositiveOrNegative()
+        {
             Console.WriteLine("Enter number: ");
             int inputNum = Convert.ToInt32(Console.ReadLine());
 
@@ -30,7 +30,7 @@ namespace LearningCSharp
             {
                 Console.WriteLine("Number is positive");
             }
-		}
+        }
 
         public static void CheckIfLeapYear()
         {
@@ -54,5 +54,5 @@ namespace LearningCSharp
                 Console.WriteLine("{0} is Not a leap year", inputYear);
             }
         }
-	}
+    }
 }
