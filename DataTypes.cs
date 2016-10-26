@@ -5,6 +5,24 @@ namespace LearningCSharp
 {
     public class DataTypePractice
     {
+        public static void Main()
+        {
+            // Take number and width, print triangle of that width using that number
+            TriangleOfWidth(3, 20);
+
+            // Take two numbers and expression and print result
+            evalExpression(20, "-", 12);
+
+            // Take radius and return perimeter and area (circumference)
+            CalcPerimeterAndAreaOfCircle();
+
+            // Prompt for user and pass, return 3 different cases if they match and if they do not
+            LoginUserAndPass();
+
+            // Enter two of distance, speed, or time and find the other
+            CalculateDistanceTimeSpeed();
+        }
+        
         public static void TriangleOfWidth(int inputNumber, int widthNumber)
         // Take number and width, print triangle of that width using that number
         {
