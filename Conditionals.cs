@@ -14,18 +14,6 @@ namespace LearningCSharp
             // Provide year check if it is a leap year
             Console.WriteLine("Entering Method CheckIfLeapYear()");
             CheckIfLeapYear();
-
-            foreach (int year in Enumerable.Range(2015, 99))
-            {
-                if (DateTime.IsLeapYear(year))
-                {
-                    Console.WriteLine("{0} is leap year", year);
-                }
-                else
-                {
-                    Console.WriteLine("{0} is NOT leap year", year);
-                }
-            }
         }
 
 		public static void PositiveOrNegative()
