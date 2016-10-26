@@ -21,6 +21,9 @@ namespace LearningCSharp
 
             // Enter two of distance, speed, or time and find the other
             CalculateDistanceTimeSpeed();
+            
+            // Enter two numbers print if Both numbers are even or odd
+            EvenOrOdd();
         }
         
         public static void TriangleOfWidth(int inputNumber, int widthNumber)
