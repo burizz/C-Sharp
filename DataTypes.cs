@@ -214,13 +214,13 @@ namespace LearningCSharp
             }
         }
 
-		public static void TakeDecimalDisplayBinary()
-		{
-			// Take decimal number and print its equivalent in binary
-			Console.WriteLine("Enter decimal number to be converted to binary");
-			int inputNumber = Convert.ToInt32(Console.ReadLine());
-			string numInBinary = Convert.ToString(inputNumber, 2);
-			Console.WriteLine("[{0}] converted to binary is [{1}]", inputNumber, numInBinary);
-		}
+	public static void TakeDecimalDisplayBinary()
+	{
+	    // Take decimal number and print its equivalent in binary
+	    Console.WriteLine("Enter decimal number to be converted to binary");
+            int inputNumber = Convert.ToInt32(Console.ReadLine());
+	    string numInBinary = Convert.ToString(inputNumber, 2);
+	    Console.WriteLine("[{0}] converted to binary is [{1}]", inputNumber, numInBinary);
+	}
     }
 }
