@@ -155,27 +155,23 @@ namespace LearningCSharp
             }
         }
 
-        public static void CheckCharType()
+        public static void EvenOrOdd()
         {
-            // Take char, check input (lowercase) is a vowel, digit, symbol
-            // islower()
+            // Take two nums return True/False if BOTH are even or odd
+            Console.WriteLine("Enter the first number: ");
+            int numOne = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter a single character :");
-            string inputChar = Console.ReadLine();
+            Console.WriteLine("Enter the second number: ");
+            int numTwo = Convert.ToInt32(Console.ReadLine());
 
-            if (inputChar.Any(char.IsDigit))
+            if (numOne % 2 == 0 && numTwo % 2 == 0)
             {
-                Console.WriteLine("Input char is a digit");
-            }
-
-            else if (inputChar.Any(char.IsSymbol))
-            {
-                Console.WriteLine("Input char is a Symbol");
+                Console.WriteLine("Numbers are even");
             }
 
             else
             {
-                Console.WriteLine("Input char is a letter");
+                Console.WriteLine("Numbers are odd");
             }
         }
     }
