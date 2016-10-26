@@ -22,6 +22,9 @@ namespace LearningCSharp
             // Enter two of distance, speed, or time and find the other
             CalculateDistanceTimeSpeed();
             
+            // Enter a char print the type of the char - vowel, digit, etc
+            CheckCharType();
+            
             // Enter two numbers print if Both numbers are even or odd
             EvenOrOdd();
         }
@@ -156,6 +159,30 @@ namespace LearningCSharp
                 time = distance / speed;
                 Console.WriteLine("Travel time: {2}hrs with speed {1}km/h for distance {0}km.", distance, speed, time.ToString("0.##"));
             }
+        }
+        
+        public static void CheckCharType()
+        {
+            char symbol;
+           
+            Console.WriteLine("Input a symbol");
+            symbol = Convert.ToChar(Console.ReadLine());
+
+            if ((symbol == 'a') || (symbol == 'e') || (symbol == 'i') ||
+                (symbol == 'o') || (symbol == 'u'))
+            {
+                Console.WriteLine("It's a lower case vowel.");
+            }
+
+            else if ((symbol >= '0') && (symbol <= '9'))
+            {
+                Console.WriteLine("It's a digit.");
+            }
+
+            else
+                Console.WriteLine("It's another symbol.");
+            // Hold console until a key is pressed
+            Console.ReadKey();
         }
 
         public static void EvenOrOdd()
