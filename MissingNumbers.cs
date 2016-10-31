@@ -2,6 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+// Compare two strings of numbers and print the numbers that are missing from inputLineN
+// inputLineN = 203 204 205 206 207 208 203 204 205 206
+// inputLineM = 203 204 204 205 206 207 205 208 203 206 205 206 204
+
 namespace HackerRank
 {
 	class MainClass
@@ -9,11 +13,9 @@ namespace HackerRank
 		static void Main(String[] args)
 		{
 			// Build Array N from input numbers
-			Console.ReadLine();
 			string[] inputLineN = Console.ReadLine().Split();
 
 			// Build Array M from second input numbers
-			Console.ReadLine();
 			string[] inputLineM = Console.ReadLine().Split();
 
 			// Convert to int[] array
@@ -30,7 +32,7 @@ namespace HackerRank
 				if (listM.Remove(listN[index]))
 				{
 					// Remove listN[index] and decrement the index to -1 so that the next iteration
-                    // starts from 0 again otherwise we will start at 1 and skip an item
+                    			// starts from 0 again otherwise we will start at 1 and skip an item
 					listN.RemoveAt(index--);
 				}
 			}
